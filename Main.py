@@ -183,6 +183,7 @@ def showStatistics(predictedClass, confidence):
 
 tf.reset_default_graph()
 
+
 convnet = input_data(shape=[None, 89, 100, 1], name='input')
 convnet = conv_2d(convnet, 32, 2, activation='relu')
 convnet = max_pool_2d(convnet, 2)
